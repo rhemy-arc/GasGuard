@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "jest",
     "test:cov": "jest --coverage",
     "lint": "eslint src/**/*.ts"
