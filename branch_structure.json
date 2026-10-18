@@ -1,0 +1,18 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "feat/rule-pack-staged-rollout",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "feat/rule-pack-staged-rollout": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "feat/rule-pack-staged-rollout",
+    "origin"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "description": "Rollout of soroban-core 1.5.0 (new storage-rent rules) over 1.4.2, scanned against a Soroban AMM repository that also uses an unmanaged EVM pack.",
+  "stableVersion": "1.4.2",
+  "plan": {
+    "packId": "soroban-core",
+    "candidateVersion": "1.5.0",
+    "stages": [1, 10, 50, 100],
+    "allowTenants": ["gasguard-dogfood"],
+    "denyTenants": ["regulated-bank-eu"],
+    "gate": { "minSamples": 5, "maxFailureRatio": 0.2, "autoRollback": true }
+  },
+  "otherManagedPacks": [
+    { "packId": "soroban-security", "stableVersion": "2.0.1" }
+  ],
+  "scan": {
+    "tenantId": "acme-defi",
+    "repository": "github.com/acme/soroban-amm",
+    "commit": "9f2c4b1e7a3d5f60c8b2e4a1d7f9c3b5e2a4d6f8",
+    "scanId": "acme-defi:soroban-amm:9f2c4b1e:ci-4812",
+    "packIds": ["soroban-security", "soroban-core", "evm-gas"]
+  }
+}

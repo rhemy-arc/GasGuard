@@ -14,11 +14,8 @@ dist
 build
 
 # Environment
-.env
-.env.local
 
 # IDEs
-.vscode/*
 !.vscode/extensions.json
 .idea
 
@@ -34,3 +31,4 @@ pnpm-debug.log*
 .terraform
 *.tfstate
 *.tfstate.backup
+config.bat

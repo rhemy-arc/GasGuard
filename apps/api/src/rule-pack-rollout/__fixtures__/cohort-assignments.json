@@ -1,0 +1,83 @@
+{
+  "description": "Frozen cohort assignments for soroban-core@1.5.0 with stages [1, 10, 50, 100]. Changing tenantBucket reshuffles cohorts mid-rollout; this snapshot must only change together with a documented migration.",
+  "packId": "soroban-core",
+  "candidateVersion": "1.5.0",
+  "stagesBasisPoints": [100, 1000, 5000, 10000],
+  "assignments": [
+    {
+      "tenantId": "acme-defi",
+      "bucket": 3188,
+      "candidateFromStage": 2
+    },
+    {
+      "tenantId": "gasguard-dogfood",
+      "bucket": 9800,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "regulated-bank-eu",
+      "bucket": 7286,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "stellar-anchor-co",
+      "bucket": 8183,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "tenant-0001",
+      "bucket": 2038,
+      "candidateFromStage": 2
+    },
+    {
+      "tenantId": "tenant-0002",
+      "bucket": 9234,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "tenant-0003",
+      "bucket": 9599,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "tenant-0004",
+      "bucket": 8009,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "tenant-0005",
+      "bucket": 9840,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "tenant-0006",
+      "bucket": 5325,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "tenant-0007",
+      "bucket": 1942,
+      "candidateFromStage": 2
+    },
+    {
+      "tenantId": "tenant-0008",
+      "bucket": 634,
+      "candidateFromStage": 1
+    },
+    {
+      "tenantId": "org:example/project",
+      "bucket": 1161,
+      "candidateFromStage": 2
+    },
+    {
+      "tenantId": "Tenant.With.Dots",
+      "bucket": 5289,
+      "candidateFromStage": 3
+    },
+    {
+      "tenantId": "u@example",
+      "bucket": 4443,
+      "candidateFromStage": 2
+    }
+  ]
+}
